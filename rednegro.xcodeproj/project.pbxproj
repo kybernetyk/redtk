@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		03352FE213ABC96C00F57270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03352FE113ABC96C00F57270 /* Foundation.framework */; };
 		03352FE513ABC96C00F57270 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03352FE413ABC96C00F57270 /* main.m */; };
+		03352FF413ABCA0200F57270 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03352FF113ABCA0200F57270 /* ScriptingBridge.framework */; };
+		03352FF613ABCE3D00F57270 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03352FF513ABCE3D00F57270 /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +29,11 @@
 		03352FDD13ABC96C00F57270 /* rednegro */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rednegro; sourceTree = BUILT_PRODUCTS_DIR; };
 		03352FE113ABC96C00F57270 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03352FE413ABC96C00F57270 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		03352FE713ABC96C00F57270 /* rednegro-Prefix.pch */ = {isa = PBXFileReference; path = "rednegro-Prefix.pch"; sourceTree = "<group>"; };
+		03352FE713ABC96C00F57270 /* rednegro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rednegro-Prefix.pch"; sourceTree = "<group>"; };
 		03352FE813ABC96C00F57270 /* rednegro.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = rednegro.1; sourceTree = "<group>"; };
+		03352FEE13ABC98200F57270 /* safari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safari.h; sourceTree = "<group>"; };
+		03352FF113ABCA0200F57270 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		03352FF513ABCE3D00F57270 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03352FF613ABCE3D00F57270 /* AppKit.framework in Frameworks */,
+				03352FF413ABCA0200F57270 /* ScriptingBridge.framework in Frameworks */,
 				03352FE213ABC96C00F57270 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +53,8 @@
 		03352FD213ABC96C00F57270 = {
 			isa = PBXGroup;
 			children = (
+				03352FF513ABCE3D00F57270 /* AppKit.framework */,
+				03352FF113ABCA0200F57270 /* ScriptingBridge.framework */,
 				03352FE313ABC96C00F57270 /* rednegro */,
 				03352FE013ABC96C00F57270 /* Frameworks */,
 				03352FDE13ABC96C00F57270 /* Products */,
@@ -71,6 +80,7 @@
 		03352FE313ABC96C00F57270 /* rednegro */ = {
 			isa = PBXGroup;
 			children = (
+				03352FEE13ABC98200F57270 /* safari.h */,
 				03352FE413ABC96C00F57270 /* main.m */,
 				03352FE813ABC96C00F57270 /* rednegro.1 */,
 				03352FE613ABC96C00F57270 /* Supporting Files */,
