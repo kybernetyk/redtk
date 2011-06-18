@@ -1,1 +1,41 @@
-oO
+redtk - the reddit account toolkit
+	automates reddit account creation
+
+so I had some credits left on decaptcher.com (don't ask) and all the nodejs bullshit
+posts on reddit made me rage. as the internet is serious business I was naturally very 
+mad and decided to create a reddit account army to downvote those hat wearing hippsters.
+
+this here is the result of my evil deeds.
+
+at first I tried to fake shit with http. but reddit is a 1st class javascript cesspool
+and nothing worked out. (they check if you actually click on input fields before
+they accept your input)
+
+so I took good proven Apple technology and started automating safari over the
+cocoa script bridge. it's so fucking easy - I just have to inject some javascript
+code that manipulates the DOM and I'm ready to go. I have to say this is by far
+the easiest automation/scraping I've ever done. I think this will become my
+method of choice ...
+
+the most complicated part of the project was to figure out the decaptcher http api ...
+
+script kiddie starting guide:
+  clone this repo and type "./build.sh"
+  check out solve.sh to enter your decaptcher.com credentials
+  ./newacc.sh $user $pass will create a new account for you
+
+if you want to use these accounts to heavily spam reddit consider using proxies.
+reddit is pretty paranoid about spam and if you act stupid your accounts will be gone.
+also adding email support might help out to make your bot army more believable.
+
+oh yeah, you will need OS X 10.6+, Safari 5 and XCode for this to work. 
+no, there is no windows version and there won't be one. get a real computer and stop using
+windows. also no linux version - I have no idea how to automate lynx.
+
+fun fact: captcha image alt text on the reddit registration page:
+  > i wonder if these things even work
+
+no they don't.
+
+
+license: GPL3
