@@ -1,36 +1,54 @@
 redtk - the reddit account toolkit
 	automates reddit account creation
 
-so I had some credits left on decaptcher.com (don't ask) and all the nodejs bullshit
-posts on reddit made me rage. as the internet is serious business I was naturally very 
-mad and decided to create a reddit account army to downvote those hat wearing hippsters.
+so I had some credits left on decaptcher.com (don't ask) and wondered what the current
+state of captcha protection is and how easy it would be to spam some popular services. 
+I chose reddit.com for this experiment. (don't worry - no spam was done)
 
-this here is the result of my evil deeds.
+this here is the result of my evil deeds. it's a bunch of scripts and code that
+will automate reddit account creation. 
 
-at first I tried to fake shit with http. but reddit is a 1st class javascript cesspool
-and nothing worked out. (they check if you actually click on input fields before
-they accept your input)
+at first I tried to fake data with http. but reddit is so heavily dependent on
+javascript that this simply didn't work out. (they check if you actually click on 
+input fields before they accept the input)
 
-so I took good proven Apple technology and started automating safari over the
-cocoa script bridge. it's so fucking easy - I just have to inject some javascript
-code that manipulates the DOM and I'm ready to go. I have to say this is by far
-the easiest automation/scraping I've ever done. I think this will become my
-method of choice ...
+not wanting to mess with javascript too much (at first I thought about integrating
+a javascript VM) I decided to automate a browser. I took Apple's Safari as it has
+awesome automation capabilities through the cocoa scripting bridge. 
 
-the most complicated part of the project was to figure out the decaptcher http api ...
+creating accounts this way was nothing more than reading some DOM elements values,
+solving a captcha and injecting some javascript back. the most complicated part
+was to figure out the captcha solving API of decaptcher.com ...
+
+it took only a few hours to get everything working and it would take only a few
+hours more to build in proxy support and to spam reddit (either submitting content
+or, which is far more interesting, influence public opinion by down/upvoting 
+certain topics)
+
+this project is a proof of concept how easily one can unleash a bot army upon
+a popuplar social media website. the reliance on javascript makes this more than
+a trivial task. and captchas itself are more than broken. decaptcher.com will solve
+a reddit captcha within 15 seconds with nearly 100% accuracy. solving 1000 captchas
+costs $2. 
+
+in its current form this project is useless for any script kiddie spammer;
+reddit is pretty good at detecting bots and this project doesn't even have support 
+for proxies. to make this work one would need more knowledge and skill than the
+average blackhat "SEO" will ever have.
+
+but this doesn't mean there aren't people who already are spamming/influencing reddit.
+it's far too easy if you know what you do.
+
+--------------------------------------------------------------------------------------
 
 script kiddie starting guide:
   clone this repo and type "./build.sh"
   check out solve.sh to enter your decaptcher.com credentials
   ./newacc.sh $user $pass will create a new account for you
 
-if you want to use these accounts to heavily spam reddit consider using proxies.
-reddit is pretty paranoid about spam and if you act stupid your accounts will be gone.
-also adding email support might help out to make your bot army more believable.
-
 oh yeah, you will need OS X 10.6+, Safari 5 and XCode for this to work. 
-no, there is no windows version and there won't be one. get a real computer and stop using
-windows. also no linux version - I have no idea how to automate lynx.
+
+---------------------------------------------------------------------------------------
 
 fun fact: captcha image alt text on the reddit registration page:
   > i wonder if these things even work
@@ -39,3 +57,4 @@ no they don't.
 
 
 license: GPL3
+(c) Leon Szpilewski, 2011
