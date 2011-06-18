@@ -1,0 +1,224 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03AE6DFA13AD09B10035C3C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AE6DF913AD09B10035C3C8 /* Foundation.framework */; };
+		03AE6DFD13AD09B10035C3C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AE6DFC13AD09B10035C3C8 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03AE6DF313AD09B10035C3C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03AE6DF513AD09B10035C3C8 /* redtoolkit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = redtoolkit; sourceTree = BUILT_PRODUCTS_DIR; };
+		03AE6DF913AD09B10035C3C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		03AE6DFC13AD09B10035C3C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03AE6DFF13AD09B10035C3C8 /* redtoolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redtoolkit-Prefix.pch"; sourceTree = "<group>"; };
+		03AE6E0013AD09B10035C3C8 /* redtoolkit.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = redtoolkit.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03AE6DF213AD09B10035C3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03AE6DFA13AD09B10035C3C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03AE6DEA13AD09B10035C3C8 = {
+			isa = PBXGroup;
+			children = (
+				03AE6DFB13AD09B10035C3C8 /* redtoolkit */,
+				03AE6DF813AD09B10035C3C8 /* Frameworks */,
+				03AE6DF613AD09B10035C3C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03AE6DF613AD09B10035C3C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03AE6DF513AD09B10035C3C8 /* redtoolkit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03AE6DF813AD09B10035C3C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03AE6DF913AD09B10035C3C8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03AE6DFB13AD09B10035C3C8 /* redtoolkit */ = {
+			isa = PBXGroup;
+			children = (
+				03AE6DFC13AD09B10035C3C8 /* main.m */,
+				03AE6E0013AD09B10035C3C8 /* redtoolkit.1 */,
+				03AE6DFE13AD09B10035C3C8 /* Supporting Files */,
+			);
+			path = redtoolkit;
+			sourceTree = "<group>";
+		};
+		03AE6DFE13AD09B10035C3C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03AE6DFF13AD09B10035C3C8 /* redtoolkit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03AE6DF413AD09B10035C3C8 /* redtoolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03AE6E0313AD09B10035C3C8 /* Build configuration list for PBXNativeTarget "redtoolkit" */;
+			buildPhases = (
+				03AE6DF113AD09B10035C3C8 /* Sources */,
+				03AE6DF213AD09B10035C3C8 /* Frameworks */,
+				03AE6DF313AD09B10035C3C8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = redtoolkit;
+			productName = redtoolkit;
+			productReference = 03AE6DF513AD09B10035C3C8 /* redtoolkit */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03AE6DEC13AD09B10035C3C8 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 03AE6DEF13AD09B10035C3C8 /* Build configuration list for PBXProject "redtoolkit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 03AE6DEA13AD09B10035C3C8;
+			productRefGroup = 03AE6DF613AD09B10035C3C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03AE6DF413AD09B10035C3C8 /* redtoolkit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03AE6DF113AD09B10035C3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03AE6DFD13AD09B10035C3C8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03AE6E0113AD09B10035C3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		03AE6E0213AD09B10035C3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		03AE6E0413AD09B10035C3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redtoolkit/redtoolkit-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03AE6E0513AD09B10035C3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redtoolkit/redtoolkit-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03AE6DEF13AD09B10035C3C8 /* Build configuration list for PBXProject "redtoolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03AE6E0113AD09B10035C3C8 /* Debug */,
+				03AE6E0213AD09B10035C3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03AE6E0313AD09B10035C3C8 /* Build configuration list for PBXNativeTarget "redtoolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03AE6E0413AD09B10035C3C8 /* Debug */,
+				03AE6E0513AD09B10035C3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03AE6DEC13AD09B10035C3C8 /* Project object */;
+}
