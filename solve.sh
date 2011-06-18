@@ -2,7 +2,11 @@
 # this script will solve a captcha by using the decaptcher service 
 # more info: http://decaptcher.com/
 #
-# set _user and _pass accordingly.
+# for this to work you have to create a file named '.decaptcher.
+# in the current directory and fill it with your decaptcher.com
+# username and password. seperate user and pass byt a whitespace
+# example:
+#   jack mypass\n
 
 if [ ! -e ".decaptcher" ]
 then
@@ -10,12 +14,16 @@ then
 	exit
 fi
 
+if [ $# -ne 1 ]
+then
+  echo "Usage: `basename $0` captchaimage"
+  exit $E_BADARGS
+fi
+
+
 # decaptcher.com credentials
 _user=`awk <.decaptcher '{print $1}'`
 _pass=`awk <.decaptcher '{print $2}'` 
 
-echo $_user
-echo $_pass
-
-#curl -F "function=picture2" -F "username=$_user" -F "password=$_pass" -F "pict=@captcha.png" -F "pict_to=0" -F "pict_type=0" http://poster.decaptcher.com/ |awk 'BEGIN {FS="|"}; {print $6}'
+curl -F "function=picture2" -F "username=$_user" -F "password=$_pass" -F "pict=@$1" -F "pict_to=0" -F "pict_type=0" http://poster.decaptcher.com/ |awk 'BEGIN {FS="|"}; {print $6}'
 
