@@ -1,5 +1,6 @@
 .DS_Store
 captcha.png
+.cap
 build*
 redtk*
 .decaptcher
