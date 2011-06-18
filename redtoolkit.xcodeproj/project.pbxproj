@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0325E9A313AD0A3700C9C9A7 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0325E9A213AD0A3700C9C9A7 /* ScriptingBridge.framework */; };
 		03AE6DFA13AD09B10035C3C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AE6DF913AD09B10035C3C8 /* Foundation.framework */; };
 		03AE6DFD13AD09B10035C3C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AE6DFC13AD09B10035C3C8 /* main.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0325E9A013AD0A0400C9C9A7 /* safari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safari.h; sourceTree = "<group>"; };
+		0325E9A213AD0A3700C9C9A7 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		03AE6DF513AD09B10035C3C8 /* redtoolkit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = redtoolkit; sourceTree = BUILT_PRODUCTS_DIR; };
 		03AE6DF913AD09B10035C3C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03AE6DFC13AD09B10035C3C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0325E9A313AD0A3700C9C9A7 /* ScriptingBridge.framework in Frameworks */,
 				03AE6DFA13AD09B10035C3C8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +50,7 @@
 		03AE6DEA13AD09B10035C3C8 = {
 			isa = PBXGroup;
 			children = (
+				0325E9A213AD0A3700C9C9A7 /* ScriptingBridge.framework */,
 				03AE6DFB13AD09B10035C3C8 /* redtoolkit */,
 				03AE6DF813AD09B10035C3C8 /* Frameworks */,
 				03AE6DF613AD09B10035C3C8 /* Products */,
@@ -71,6 +76,7 @@
 		03AE6DFB13AD09B10035C3C8 /* redtoolkit */ = {
 			isa = PBXGroup;
 			children = (
+				0325E9A013AD0A0400C9C9A7 /* safari.h */,
 				03AE6DFC13AD09B10035C3C8 /* main.m */,
 				03AE6E0013AD09B10035C3C8 /* redtoolkit.1 */,
 				03AE6DFE13AD09B10035C3C8 /* Supporting Files */,
@@ -217,6 +223,7 @@
 				03AE6E0513AD09B10035C3C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
