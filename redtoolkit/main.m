@@ -222,7 +222,7 @@ void logout(void)
 
 void usage(const char *bin)
 {
-	fprintf(stdout, "\nkarmawhore v0.0.1c - your friendly reddit account creation tool\n");
+	fprintf(stdout, "\nredtk v0.0.1c - your friendly reddit account creation tool\n");
 	fprintf(stdout, "syntax: %s <command> [parameter] [...]\n", bin);
 	fprintf(stdout, "  -o | --openreg                  opens new registartion in safari\n");
 	fprintf(stdout, "  -g | --getcaptcha               prints the captcha image file's url\n");
