@@ -1,0 +1,5 @@
+.DS_Store
+captcha.png
+build*
+redtk*
+.decaptcher
